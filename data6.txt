@@ -1,0 +1,19 @@
+9
+S 500
+S 500
+S 500
+L 1500
+L 1500
+L 1500
+P 100
+P 100
+P 100
+8
+C Adriel
+G Bernice
+G Bethany
+T Charity
+G Chloe
+C Dinah
+C Diana
+T Elisha

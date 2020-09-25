@@ -1,0 +1,13 @@
+8
+P 0
+P 0
+L 700
+P 0
+S 1100
+S 1100
+L 600
+P 0
+3
+T Lilly
+G Laila
+C Laima

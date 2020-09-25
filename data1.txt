@@ -1,0 +1,12 @@
+6
+S 700
+L 1000
+P 900
+P 900
+L 1000
+S 700
+4
+G Max
+C Karan
+T Frans
+G Messi
