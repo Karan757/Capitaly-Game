@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CapitalyGame">
+  <ClassDiagramComponents>
+    <Class name="Careful" package="capitalygame" visibility="public" xPosition="1378.0" yPosition="324.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="balance"/>
+          <Argument type="int" name="current_position"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Data" package="capitalygame" visibility="public" xPosition="747.0" yPosition="488.0">
+      <Fields>
+        <Field name="players_data" type="ArrayList&lt;Players&gt;" visibility="private" isFinal="true"/>
+        <Field name="fields_data" type="ArrayList&lt;Fields&gt;" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="read" returnType="void" visibility="public">
+          <Argument type="String" name="filename"/>
+        </Method>
+        <Method name="report" returnType="void" visibility="public">
+          <Argument type="String" name="filename"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Fields" package="capitalygame" visibility="public" xPosition="587.0" yPosition="35.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="cost_parameter" type="int" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="player_owned" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+          <Argument type="int" name="cost_parameter"/>
+          <Argument type="String" name="status"/>
+          <Argument type="String" name="player_owned"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getCost_parameter" returnType="int" visibility="public"/>
+        <Method name="getPlayer_owned" returnType="String" visibility="public"/>
+        <Method name="setPlayer_owned" returnType="void" visibility="public">
+          <Argument type="String" name="player_owned"/>
+        </Method>
+        <Method name="setCost_parameter" returnType="void" visibility="public">
+          <Argument type="int" name="cost_parameter"/>
+        </Method>
+        <Method name="getStatus" returnType="String" visibility="public"/>
+        <Method name="setStatus" returnType="void" visibility="public">
+          <Argument type="String" name="status"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Greedy" package="capitalygame" visibility="public" xPosition="1507.0" yPosition="60.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="balance"/>
+          <Argument type="int" name="current_position"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="InvalidInputException" package="capitalygame" visibility="public" xPosition="1006.0" yPosition="561.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Lucky" package="capitalygame" visibility="public" xPosition="165.0" yPosition="351.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="cost_parameter"/>
+          <Argument type="String" name="status"/>
+          <Argument type="String" name="player_owned"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="main" package="capitalygame" visibility="public" xPosition="496.0" yPosition="538.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Players" package="capitalygame" visibility="public" xPosition="1043.0" yPosition="25.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="strategy" type="String" visibility="private"/>
+        <Field name="balance" type="int" visibility="private"/>
+        <Field name="current_position" type="int" visibility="private"/>
+        <Field name="chance" type="boolean" visibility="private"/>
+        <Field name="buying_power" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="strategy"/>
+          <Argument type="int" name="balance"/>
+          <Argument type="int" name="current_position"/>
+          <Argument type="boolean" name="chance"/>
+          <Argument type="int" name="buying_power"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getStrategy" returnType="String" visibility="public"/>
+        <Method name="getBalance" returnType="int" visibility="public"/>
+        <Method name="getCurrent_position" returnType="int" visibility="public"/>
+        <Method name="getChance" returnType="boolean" visibility="public"/>
+        <Method name="getBuying_power" returnType="int" visibility="public"/>
+        <Method name="setBuying_power" returnType="void" visibility="public">
+          <Argument type="int" name="buying_power"/>
+        </Method>
+        <Method name="setChance" returnType="void" visibility="public">
+          <Argument type="boolean" name="chance"/>
+        </Method>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setStrategy" returnType="void" visibility="public">
+          <Argument type="String" name="strategy"/>
+        </Method>
+        <Method name="setBalance" returnType="void" visibility="public">
+          <Argument type="int" name="balance"/>
+        </Method>
+        <Method name="setCurrent_position" returnType="void" visibility="public">
+          <Argument type="int" name="current_position"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Property" package="capitalygame" visibility="public" xPosition="146.0" yPosition="86.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="cost_parameter"/>
+          <Argument type="String" name="status"/>
+          <Argument type="String" name="player_owned"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Service" package="capitalygame" visibility="public" xPosition="165.0" yPosition="222.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="cost_parameter"/>
+          <Argument type="String" name="status"/>
+          <Argument type="String" name="player_owned"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Tactical" package="capitalygame" visibility="public" xPosition="1504.0" yPosition="188.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="balance"/>
+          <Argument type="int" name="current_position"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="capitalygame.Service" target="capitalygame.Fields"/>
+    <IsRelation name="is" source="capitalygame.Tactical" target="capitalygame.Players"/>
+    <IsRelation name="is" source="capitalygame.Careful" target="capitalygame.Players"/>
+    <IsRelation name="is" source="capitalygame.Lucky" target="capitalygame.Fields"/>
+    <IsRelation name="is" source="capitalygame.Property" target="capitalygame.Fields"/>
+    <HasRelation name="players_data" source="capitalygame.Data" target="capitalygame.Players" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Players&gt;"/>
+    <IsRelation name="is" source="capitalygame.Greedy" target="capitalygame.Players"/>
+    <HasRelation name="fields_data" source="capitalygame.Data" target="capitalygame.Fields" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Fields&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
